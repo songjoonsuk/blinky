@@ -45,18 +45,31 @@
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+
 <script>
-  // Initialize Firebase
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var config = {
-    apiKey: "AIzaSyABCaBBY04zpvIl1efmOPrKwNtPkgTXfqs",
-    authDomain: "team-sidney.firebaseapp.com",
-    databaseURL: "https://team-sidney.firebaseio.com",
-    storageBucket: "team-sidney.appspot.com",
+    apiKey: "AIzaSyBo45Tdmu_dZQNDnZ2e0Nh-Ix7Zy9YyKnc",
+    authDomain: "iot-demo-b5ddd.firebaseapp.com",
+    databaseURL: "https://iot-demo-b5ddd-default-rtdb.firebaseio.com",
+    projectId: "iot-demo-b5ddd",
+    storageBucket: "iot-demo-b5ddd.appspot.com",
+    messagingSenderId: "623741742161",
+    appId: "1:623741742161:web:92b8a3fc134727a5175c70",
+    measurementId: "G-G8FPN9VLEH"
   };
+  // Initialize Firebase
   firebase.initializeApp(config);
+  firebase.analytics();
 </script>
+
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="main.css" type="text/css">
